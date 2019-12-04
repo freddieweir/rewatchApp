@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <ion-button routerLink="/tabs/tab3" routerDirection="back">
+        <ion-icon slot="icon-only" color="light" name="arrow-round-back"></ion-icon>
+      </ion-button>
+      Account
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item (click)="logout()">
+    <ion-icon slot="start" name="log-out"></ion-icon>
+      <ion-label>
+        Logout
+      </ion-label>
+  </ion-item>
+
+  <!--<ion-button color="light" expand="full" routerLink="/account" routerDirection="forward">
+    Logout
+  <!--</ion-button>-->
+</ion-content>

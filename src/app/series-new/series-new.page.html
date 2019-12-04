@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>New Series</ion-title>
+    <ion-buttons >
+      <ion-button routerLink="/tabs/tab2" routerDirection="back">
+        Back
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="content-background" no-bounce>
+  <form (submit)="addSeries()" class="form-div">
+    <ion-list>
+      <ion-item>
+        <ion-label position="stacked">Description</ion-label>
+        <ion-input type="text" [(ngModel)]="newSeries.description" name="description"> </ion-input>
+      </ion-item>
+
+      <ion-button expand="full" type="submit">Submit</ion-button>
+    </ion-list>
+
+  </form>
+
+</ion-content>

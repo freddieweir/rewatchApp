@@ -1,9 +1,18 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Two
+      List
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <ion-button color="light" expand="full" routerLink="/series-new" routerDirection="forward">
+    Add Series
+  </ion-button>
+  <ion-card *ngFor="let series of seriesService.series" (click)="onSelect(series)">
+    <ion-card-content>
+      {{ series.description }}
+    </ion-card-content>
+  </ion-card>
+</ion-content>

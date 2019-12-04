@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <ion-button routerLink="/tabs/tab3" routerDirection="back">
+        <ion-icon slot="icon-only" color="light" name="arrow-round-back"></ion-icon>
+      </ion-button>
+      About
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="welcome-card">
+    <img src="/assets/YourName.jpg" alt="" />
+    <ion-card-header>
+      <ion-card-title>Tab Plan</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>*New* Allow for user to pick randomly generated show in entire
+      AniList database without signing in (requires no OAuth key). App will
+      grab randomized entry via query request from AniList's GraphQL API
+      and return a JSON response. Confirmed to work with JavaScript, but
+      unsure if additional steps are necessary for TypeScript.
+      <br><br>*MVP* Upon sign-in (from settings), user can choose show to
+      watch/rewatch from their entire list (requires Implicit Grant OAuth key)
+      via API.
+      <br><br>*Next Step* Filter list by "Completed" (Rewatch) and
+      "Plan To Watch" (Watch). Filtering by "Paused" and "Dropped" is a
+      possible option, but filter by "Watching" is unnecessary.
+      <br><br> *Optional Step* Implement Trakt API and sign-in for
+      non-anime entries. Optional because everyone I know who rewatches
+      non-anime shows just watch The Office or something. Low priority.</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

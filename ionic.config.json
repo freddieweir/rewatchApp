@@ -1,5 +1,7 @@
 {
   "name": "rewatchApp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
